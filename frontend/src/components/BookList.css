@@ -1,0 +1,63 @@
+.book-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.book-list input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.book-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-list li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.book-list button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5d82cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-list button:disabled {
+    background-color: #aaa;
+}
+
+.book-list h3 {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.book-list p {
+    margin: 0;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .book-list {
+        padding: 10px;
+    }
+
+    .book-list li {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .book-list button {
+        padding: 8px;
+    }
+}
