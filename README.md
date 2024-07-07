@@ -15,10 +15,40 @@ This repository contains the Book Library project, which includes a Symfony back
 - [Git](https://git-scm.com/)
 - WAMP server
 
-##Running the Application
+**Set up the environment variables**:
 
-- The backend will be available at http://localhost:8000
-- The frontend will be available at http://localhost:3000
+    Edit `.env.local` and set the database credentials:
+
+    ```
+    DATABASE_URL="mysql://root:@127.0.0.1:3306/book_library?serverVersion=8.0"
+
+    ```
+
+**Create the database and run migrations**:
+
+    - php bin/console doctrine:database:create
+    - php bin/console doctrine:migrations:migrate
+
+**Load sample data**:
+
+    - php bin/console doctrine:fixtures:load
+
+**Run the Symfony server**:
+
+    - symfony server:start
+
+
+### Frontend (React)
+
+**Start the React development server**:
+
+    - npm start
+
+
+## Access the Application
+
+- The Symfony backend should be running at `http://localhost:8000`
+- The React frontend should be running at `http://localhost:3000`
 
 
 ## SQL Export File
